@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { ethers } from "ethers";
+import YourSvg from "./images/github-mark-white.png";
 import faucetContract from "./ethereum/faucet";
 
 function App() {
@@ -173,6 +174,14 @@ function App() {
           </div>
         </div>
       </section>
+      <footer className="footer">
+        Developed by Sammed
+        <div className="app">
+          <a href="https://github.com/sammed-21/Ocean_Token">
+            <img alt="stack overflow" src={YourSvg}></img>
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
